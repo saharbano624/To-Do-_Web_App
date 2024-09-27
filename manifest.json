@@ -1,0 +1,22 @@
+{
+    "name": "Your PWA Name",
+    "short_name": "PWA Name",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#FFE9D2",
+    "theme_color": "#FFE1C4",
+    "orientation" : "portrait-primary",
+    "icons": [
+      {
+        "src": "Flower.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "Flower.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
