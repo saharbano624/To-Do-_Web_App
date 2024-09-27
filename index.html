@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag & Drop API</title>
+<!-- materiaize icons, css & js -->
+  <link type="text/css" href="/css/materialize.min.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+  <link rel="manifest" href="/manifest.json">
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="/flower.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+  <meta name="theme-color" content="#FFE1C4">
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="drag.js" defer></script>
+    <script src="todo.js" defer></script>
+  </head>
+  <body>
+    <div class="board">
+      <form id="todo-form">
+        <input type="text" placeholder="New TODO..." id="todo-input" />
+        <button type="submit">Add +</button>
+      </form>
+
+      <div class="lanes">
+        <div class="swim-lane" id="todo-lane">
+          <h3 class="heading">TODO</h3>
+
+          <p class="task" draggable="true">Get groceries</p>
+          <p class="task" draggable="true">Feed the dogs</p>
+          <p class="task" draggable="true">Mow the lawn</p>
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">Doing</h3>
+
+          <p class="task" draggable="true">Binge 80 hours of Game of Thrones</p>
+        </div>
+
+        <div class="swim-lane">
+          <h3 class="heading">Done</h3>
+
+          <p class="task" draggable="true">
+            Watch video of a man raising a grocery store lobster as a pet
+          </p>
+        </div>
+      </div>
+    </div>
+<script src="/js/app.js"></script>
+  </body>
+</html>
